@@ -39,16 +39,17 @@ class Quarto {
 }
 class Sistema{
     constructor(){
-        this.clientes = [];
-        this.funcionarios = [];
-        this.quartos = [];
-        this.reservas = [];
-        this.clienteLogado = null;
-        this.funcionarioLogado = null
-        this.proximoIdCliente = 1;
-        this.proximoIdFuncionario = 1;
-        this.proximoIdQuarto = 1;
-        this.proximoIdReserva = 1;
+        // atributos da classe Sistema
+        this.clientes = []; // array com dados dos clientes cadastrados
+        this.funcionarios = []; // array com dados dos funcionários cadastrados
+        this.quartos = []; // array com dados dos quartos cadastrados
+        this.reservas = []; // array com dados das reservas registradas
+        this.clienteLogado = null; // variável que define se há um cliente logado para manter um loop infinito no menu de cliente, ate que o usuario faça logout e essa variavel volta ao valor null
+        this.funcionarioLogado = null // variável que define se há um funcionário logado para manter um loop infinito no menu de cliente, ate que o usuario faça logout e essa variavel volta ao valor null
+        this.proximoIdCliente = 1; // controla o número de ID dos clientes
+        this.proximoIdFuncionario = 1; // controla o número de ID dos funcionários
+        this.proximoIdQuarto = 1; // controla o número de ID dos quartos
+        this.proximoIdReserva = 1; // controla o número de ID das reservas
     }
 
     // Método que permite cadastrar clientes. Acessado no menu inicial.
